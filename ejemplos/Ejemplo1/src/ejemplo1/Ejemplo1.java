@@ -8,6 +8,8 @@
  */
 package ejemplo1;
 
+import java.util.Scanner;
+import java.util.Locale;
 /**
  *
  * @author reroes
@@ -15,9 +17,14 @@ package ejemplo1;
 public class Ejemplo1 {
 
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
         // Condicionales simplesmain
-
-        double promedio = 7.5;
+       
+        double promedio;
+        System.out.println("ingrese el valor a analizar");
+        promedio = entrada.nextDouble( );
+                
 
         if (promedio >= 7.5) {
             System.out.printf("Estudiante aprobado con un "
