@@ -20,23 +20,25 @@ public class Ejemplo1 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         // Condicionales simplesmain
-       
+       double limite_nota;
         double promedio;
         System.out.println("ingrese el valor a analizar");
         promedio = entrada.nextDouble( );
+        System.out.println("ingrese el limite de las notas");
+        limite_nota = entrada.nextDouble( );
                 
 
-        if (promedio >= 7.5) {
+        if (promedio >= limite_nota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio == 7.5) {
+        if (promedio == limite_nota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
 
-        if (promedio < 7.5) {
+        if (promedio < limite_nota) {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         }
